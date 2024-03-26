@@ -7,3 +7,10 @@ test("normalizeURL function should return a normalized URL without the protocol"
   const expected = 'blog.boot.dev/path'
   expect(actual).toEqual(expected)
 })
+
+test("normalizeURL function should return a normalized URL without the trailing slashes", () => {
+  const input = 'https://blog.boot.dev/path/'
+  const actual = normalizeURL(input)
+  const expected = 'blog.boot.dev/path'
+  expect(actual).toEqual(expected)
+})
