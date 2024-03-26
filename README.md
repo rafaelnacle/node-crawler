@@ -18,3 +18,8 @@ npm install
 ```bash
 npm start
 ```
+
+#### Usage
+```
+npm run start <link-to-crawl>
+```
